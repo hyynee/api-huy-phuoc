@@ -85,6 +85,17 @@
   color: white;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  #tbody .container .row .col .card {
+    width: 270px;
+    min-height: 400px;
+    border-radius: 15px;
+    padding: 0px 20px;
+    background-color: black;
+    color: white;
+    position: relative;
+  }
+}
 #tbody .container .row .col .card .card__heart {
   font-size: 25px;
   position: absolute;
@@ -97,6 +108,10 @@
   left: unset;
   right: 20px;
   top: 10px;
+}
+#tbody .container .row .col .card .card_img {
+  transition: 0.5s;
+  transition-delay: 0.4s;
 }
 #tbody .container .row .col .card .card_img img {
   width: 80%;
@@ -112,6 +127,11 @@
 #tbody .container .row .col .card .card-body .card__title {
   text-align: center;
   font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  #tbody .container .row .col .card .card-body {
+    bottom: -220px;
+  }
 }
 #tbody .container .row .col .card .card-bottom {
   position: absolute;

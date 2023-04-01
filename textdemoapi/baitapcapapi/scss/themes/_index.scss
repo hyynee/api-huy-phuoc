@@ -39,6 +39,16 @@
           background-color: black;
           color: white;
           position: relative;
+
+          @media screen and (max-width: 768px) {
+          width: 270px;
+          min-height: 400px;
+          border-radius: 15px;
+          padding: 0px 20px;
+          background-color: black;
+          color: white;
+          position: relative;
+          }
           .card__heart {
             font-size: 25px;
             position: absolute;
@@ -53,6 +63,8 @@
             top: 10px;
           }
           .card_img {
+            transition: 0.5s;
+            transition-delay: 0.4s;
             img {
               width: 80%;
               object-fit: cover;
@@ -67,6 +79,9 @@
               text-align: center;
               font-size: 20px;
             }
+             @media screen and (max-width: 768px) {
+              bottom: -220px;
+             }
           }
 
           .card-bottom {
