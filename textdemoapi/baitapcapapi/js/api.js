@@ -3,7 +3,7 @@ function renderTable(arr) {
   for (var index = 0; index < arr.length; index++) {
     var dg = arr[index];
     htmlString += `
-      <div class="col  col-sm-6 col-lg-4 col-12 p-4">
+      <div class="col  col-sm-6 col-lg-4 col-12" style="padding-bottom:60px">
       <div class="card mx-auto">
       <div class="card__heart">
           <i class="fa fa-heart"></i>
@@ -59,41 +59,3 @@ function layDanhSach() {
   // });
 }
 layDanhSach();
-
-
-/*
-inspiration
-https://dribbble.com/shots/4684682-Aquatic-Animals
-*/
-
-var swiper = new Swiper(".swiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 3,
-    slideShadows: true
-  },
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2
-    },
-    768: {
-      slidesPerView: 1
-    },
-    1024: {
-      slidesPerView: 2
-    },
-    1560: {
-      slidesPerView: 3
-    }
-  }
-});

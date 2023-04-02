@@ -33,22 +33,25 @@
       .col {
         .card {
           width: 330px;
-          min-height: 410px;
+          min-height: 0px;
           border-radius: 15px;
           padding: 0px 20px;
           background-color: black;
           color: white;
           position: relative;
-
+          &:hover {
+            min-height: 410px;
+            transition: 0.5s;
+          }
           @media screen and (max-width: 768px) {
-          width: 270px;
-          min-height: 400px;
-          border-radius: 15px;
-          padding: 0px 20px;
-          margin: 30px 0px;
-          background-color: black;
-          color: white;
-          position: relative;
+            width: 270px;
+            min-height: 0px;
+            border-radius: 15px;
+            padding: 0px 20px;
+            margin: 30px 0px;
+            background-color: black;
+            color: white;
+            position: relative;
           }
           .card__heart {
             font-size: 25px;
@@ -65,7 +68,7 @@
           }
           .card_img {
             transition: 0.5s;
-            transition-delay: 0.4s;
+
             img {
               width: 80%;
               object-fit: cover;
@@ -76,21 +79,21 @@
             opacity: 0;
             bottom: -200px;
             transition: 0.5s;
-            transition-delay: 0.4s;
+
             .card__title {
               text-align: center;
               font-size: 20px;
             }
-             @media screen and (max-width: 768px) {
+            @media screen and (max-width: 768px) {
               bottom: -220px;
-             }
+            }
           }
 
           .card-bottom {
             position: absolute;
             bottom: -130px;
             transition: 0.5s;
-            transition-delay: 0.4s;
+
             opacity: 0;
             .rating-button {
               .card_action {
@@ -118,24 +121,18 @@
 .card:hover .card-body {
   bottom: 120px !important;
   transition: 0.5s;
-  transition-delay: 0.4s;
   opacity: 100 !important;
 }
 
 .card:hover .card_img {
   transform: translateY(-90px) rotate(-20deg);
   transition: 0.5s;
-  transition-delay: 0.4s;
 }
 .card:hover .card-bottom {
   bottom: 12px !important;
   opacity: 100 !important;
   transition: 0.5s;
-  transition-delay: 0.4s;
 }
-
-
-
 
 .backToTop {
   width: 50px;
