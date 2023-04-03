@@ -1,0 +1,33 @@
+// default
+@import "./themes/default";
+// compunents
+@import "./themes/proone";
+// index
+@import "./themes/index";
+// detail
+@import "./themes/detail";
+// 
+@import "./themes/login";
+
+@import "./themes/register";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins";
+  }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    @extend .test-h1;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
