@@ -30,8 +30,8 @@ function renderTable(arr) {
      </div>
    </div>
      <div class="detail-content">
-       <h1 class="title">${gd.name}</h1>
-       <p class="text">
+       <h1 class="title text-white">${gd.name}</h1>
+       <p class="text text-white">
        ${gd.description}
        </p>
        <h3 class="text-success fw-semibold">Avalable size</h3>
@@ -44,7 +44,7 @@ function renderTable(arr) {
          <button class="btn text-white bg-dark">${gd.size[5]}</button>
        </div>
        <p class="display-6 text-danger">$${gd.price}</p>
-       <div class="buttons_added" style="font-size:20px;"> Số Lượng:${gd.quantity} <br>
+       <div class="buttons_added text-white" style="font-size:20px;"> Số Lượng:${gd.quantity} <br>
          <input
            class="minus is-form"
            id="minus"
