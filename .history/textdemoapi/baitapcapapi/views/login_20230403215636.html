@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LOGIN</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--css-->
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+
+  <body>
+    <header class="header p-3">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="header-logo">
+            <img src="../img/image 3.png" alt="" />
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="../img/image 8.png" alt="#" class="me-3" />
+            <a href="../views/login.html" class="me-3">Login</a>
+            <a href="../views/register.html" class="me-3">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="menu">
+      <div class="container">
+        <div class="d-inline-block">
+          <a href="../views/index.html" style="margin-right: 20px">Home</a>
+          <a href="#" style="margin-right: 20px">Men</a>
+          <a href="#" style="margin-right: 20px">Wowan</a>
+          <a href="#" style="margin-right: 20px">Kid</a>
+          <a href="#" style="margin-right: 20px">Sport</a>
+        </div>
+      </div>
+    </section>
+    <div class="login-card mx-auto">
+      <h2>Login In</h2>
+      <h3>Create your account</h3>
+      <form class="login-form">
+        <div class="username">
+          <input
+            id="email"
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="email"
+            placeholder="Email"
+            value=""
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        <input
+          id="password"
+          spellcheck="false"
+          class="control"
+          id="password"
+          type="password"
+          placeholder="Password"
+          onkeyup="handleChange()"
+        />
+        <div id="bars">
+          <div></div> 
+        </div>
+        <a href="../views/register.html" style="text-align: left"
+          >Register here</a
+        >
+        <div class="strength" id="strength"></div>
+        <button id="control" class="control" type="button">Login</button>
+        <button id="control" class="control" type="button">
+          Login with Facebook
+        </button>
+      </form>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
+      integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../util/Adidas.js"></script>
+    <!-- <script src="../admin/singup.js"></script> -->
+    <script src="../js/login.js"></script>
+  </body>
+</html>
