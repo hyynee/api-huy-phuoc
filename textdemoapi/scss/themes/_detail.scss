@@ -1,0 +1,92 @@
+@import "../themes/default";
+
+#detail {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  .container {
+    .avable {
+      @media screen and (max-width: 768px) {
+        display: block !important;
+      }
+      @media screen and (max-width: 375px) {
+        display: block !important;
+      }
+      .card {
+        position: relative;
+        width: 50%;
+        box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+        // border-top: 10px solid red;
+        // border-bottom: 10px solid black;
+        border-radius: 50px;
+        @media screen and (max-width: 768px) {
+          width: 50% !important;
+          height: 160px !important;
+        }
+        @media screen and (max-width: 375px) {
+          width: 100% !important;
+          height: 250px !important;
+        }
+        .img1 {
+          position: absolute;
+          top: 5%;
+          left: 20%;
+          @media screen and (max-width: 768px) {
+            top: -10% !important;
+          }
+          @media screen and (max-width: 375px) {
+            top: 10% !important;
+          }
+          img {
+            width: 80%;
+          }
+        }
+        .detail-content {
+          .title {
+          }
+          .text {
+          }
+          .sizes {
+          }
+          @media screen and (max-width: 375px) {
+            .buttons_added {
+              #minus {
+                width: 20% !important;
+              }
+              #number {
+                width: 20% !important;
+              }
+              #plus {
+                width: 20% !important;
+              }
+            }
+            .btn-Buy {
+              margin: 20px 0px !important;
+            }
+          }
+          .btn-Buy {
+            margin: 20px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+#item {
+  .container {
+    .row {
+      .card {
+        box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+        border-top: 4px solid #65587f;
+        border-right: 4px solid #f18867;
+        border-bottom: 4px solid #e85f99;
+        border-left: 4px solid #50bda1;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

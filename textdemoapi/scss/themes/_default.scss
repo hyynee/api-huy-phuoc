@@ -1,0 +1,48 @@
+// text
+$text-light-c0: #fff;
+$text-login-c0: #adadad;
+$text-success-c0: #b62de5;
+$text-error-color: #e73c3c;
+$text-dark-c0: #000;
+
+// background
+$bg-light-c0: #fff;
+$bg-dark-c0: #000;
+$bg-warning-c0: #e1b067;
+$bg-warning-c1: #fdc800;
+
+/* -----font-size----- */
+$fs-min: 14px;
+$fs-base: 16px;
+$fs-xl: 18px;
+$fs-2xl: 20px;
+$fs-3xl: 30px;
+$fs-4xl: 40px;
+$fs-5xl: 50px;
+$fs-6xl: 62px;
+$fs-7xl: 70px;
+
+/* ----font-weight-----*/
+$fw-light: 300;
+$fw-normal: 400;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+@mixin text($fz, $fs, $c) {
+  font-size: $fz;
+  font-weight: $fs;
+  color: $c;
+}
+
+@mixin buttonBuy($fz, $fs, $bg, $bd, $c, $c-hover, $bg-hover) {
+  font-size: $fz;
+  font-weight: $fs;
+  background: $bg;
+  border: $bd;
+  color: $c;
+  cursor: pointer;
+  &:hover {
+    color: $c-hover;
+    background: $bg-hover;
+  }
+}
