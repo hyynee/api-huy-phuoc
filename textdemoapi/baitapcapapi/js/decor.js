@@ -49,6 +49,11 @@ function toggleClass(elem, className) {
 }
 
 theToggle.onclick = function () {
+    // document.querySelector('#menu').style.display = 'block';
+    // document.querySelector('#menu-toggle').style.position = 'relative';
+    // document.querySelector('#menu-cover').style.position = 'absolute';
+    // document.querySelector('#menu-cover').style.top = 0;
+    // document.querySelector('#menu-cover').style.left = 0;
     toggleClass(this, 'on');
     return false;
 }
