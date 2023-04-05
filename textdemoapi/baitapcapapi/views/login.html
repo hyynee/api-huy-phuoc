@@ -26,13 +26,18 @@
         />
 
         <!--css-->
-        <link rel="stylesheet" href="../../../css/index.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/decor.css" />
     </head>
 
     <body>
         <!-- HEADER -->
         <header class="" id="navbar">
-            <div class="container-fluid">
+            <div
+                class="container-fluid"
+                id="container-header"
+                style="position: relative"
+            >
                 <div class="header-all">
                     <!-- header-logo -->
                     <div class="header-logo">
@@ -55,7 +60,7 @@
                     <!-- header-nav -->
 
                     <!-- header-search -->
-                    <div class="header-search">
+                    <div class="header-search" style="z-index: 100">
                         <div class="search-bar">
                             <form class="search" action="">
                                 <input
@@ -72,9 +77,56 @@
                     </div>
                     <!-- header-search -->
 
+                    <!-- toogle-menu-position -->
+                    <div
+                        class="toggle-menu-position"
+                        style="position: relative; width: 28px; height: 28px"
+                    >
+                        <div
+                            class="menu-toggle-cover"
+                            style="position: absolute; top: -19px; left: -86px"
+                        >
+                            <!-- menu-toggle -->
+                            <div id="menu-toggle">
+                                <a href="#menu" id="toggle"><span></span></a>
+                                <div id="menu" style="z-index: 1100">
+                                    <ul>
+                                        <li>
+                                            <div class="search-bar">
+                                                <form class="search" action="">
+                                                    <input
+                                                        type="search"
+                                                        class="search__input"
+                                                        name="search"
+                                                        placeholder="Search here..."
+                                                        required
+                                                        style="
+                                                            width: 100%;
+                                                            padding: 6px 6px;
+                                                            border-radius: 8px;
+                                                        "
+                                                    />
+                                                </form>
+                                            </div>
+                                        </li>
+                                        <li><a href="./index.html">Home</a></li>
+                                        <li><a href="#home">Men</a></li>
+                                        <li><a href="#home">Wowan</a></li>
+                                        <li><a href="#home">Kid</a></li>
+                                        <li><a href="#home">Sport</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- menu-toggle -->
+                        </div>
+                    </div>
+                    <!-- toogle-menu-position -->
+
                     <!-- header-service -->
                     <ul class="header-service">
-                        <li>
+                        <li style="z-index: 100">
                             <a href="" class="me-3">
                                 <i class="fa fa-cart-arrow-down"></i>
                             </a>
@@ -89,20 +141,6 @@
                         </li>
                     </ul>
                     <!-- header-service -->
-
-                    <!-- menu-toggle -->
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- menu-toggle -->
                 </div>
             </div>
         </header>
@@ -135,7 +173,13 @@
                 <div id="bars">
                     <div></div>
                 </div>
-                <a href="../views/register.html" style="text-align: left"
+                <a
+                    href="../views/register.html"
+                    style="
+                        text-align: left;
+                        text-decoration: none;
+                        color: #f9f9f9;
+                    "
                     >Register here</a
                 >
                 <div class="strength" id="strength"></div>

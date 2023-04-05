@@ -26,13 +26,18 @@
         />
 
         <!--css-->
-        <link rel="stylesheet" href="../../../css/index.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/decor.css" />
     </head>
 
     <body>
         <!-- HEADER -->
         <header class="" id="navbar">
-            <div class="container-fluid">
+            <div
+                class="container-fluid"
+                id="container-header"
+                style="position: relative"
+            >
                 <div class="header-all">
                     <!-- header-logo -->
                     <div class="header-logo">
@@ -55,7 +60,7 @@
                     <!-- header-nav -->
 
                     <!-- header-search -->
-                    <div class="header-search">
+                    <div class="header-search" style="z-index: 100">
                         <div class="search-bar">
                             <form class="search" action="">
                                 <input
@@ -72,9 +77,56 @@
                     </div>
                     <!-- header-search -->
 
+                    <!-- toogle-menu-position -->
+                    <div
+                        class="toggle-menu-position"
+                        style="position: relative; width: 28px; height: 28px"
+                    >
+                        <div
+                            class="menu-toggle-cover"
+                            style="position: absolute; top: -19px; left: -86px"
+                        >
+                            <!-- menu-toggle -->
+                            <div id="menu-toggle">
+                                <a href="#menu" id="toggle"><span></span></a>
+                                <div id="menu" style="z-index: 1100">
+                                    <ul>
+                                        <li>
+                                            <div class="search-bar">
+                                                <form class="search" action="">
+                                                    <input
+                                                        type="search"
+                                                        class="search__input"
+                                                        name="search"
+                                                        placeholder="Search here..."
+                                                        required
+                                                        style="
+                                                            width: 100%;
+                                                            padding: 6px 6px;
+                                                            border-radius: 8px;
+                                                        "
+                                                    />
+                                                </form>
+                                            </div>
+                                        </li>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#home">Men</a></li>
+                                        <li><a href="#home">Wowan</a></li>
+                                        <li><a href="#home">Kid</a></li>
+                                        <li><a href="#home">Sport</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- menu-toggle -->
+                        </div>
+                    </div>
+                    <!-- toogle-menu-position -->
+
                     <!-- header-service -->
                     <ul class="header-service">
-                        <li>
+                        <li style="z-index: 100">
                             <a href="" class="me-3">
                                 <i class="fa fa-cart-arrow-down"></i>
                             </a>
@@ -89,26 +141,37 @@
                         </li>
                     </ul>
                     <!-- header-service -->
-
-                    <!-- menu-toggle -->
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- menu-toggle -->
                 </div>
             </div>
         </header>
         <!--END HEADER -->
 
-        <section id="tbody" style="padding-top: 100px">
+        <!-- CAROUSEL -->
+        <section class="carousel">
+            <div class="container-fluid">
+                <div class="carousel-cover style="position: relative">
+                    <div class="carousel-video">
+                        <video
+                            src="https://player.vimeo.com/external/417383180.sd.mp4?s=c076c4b863e54faa6488b5a7fee79e555530296b&profile_id=165&oauth2_token_id=57447761"
+                            autoplay
+                            loop
+                            muted
+                            
+                        ></video>
+                    </div>
+                    <button
+                            class="btn btn-danger position-absolute fs-4 text-center"
+                            style="bottom:35px; width: 205px; font-weight: 700;"
+                        >
+                            BUY NOW !?
+                    </button>
+                    <div class="form-control bg-warning text-center position-absolute fs-4" style="top: 60px; width: 205px;font-weight: 700;">SALE UP 50%</div>
+                </div>
+            </div>
+        </section>
+        <!-- END CAROUSEL -->
+
+        <section id="tbody" style="padding-top: 50px">
             <div class="container">
                 <div class="row"></div>
             </div>
@@ -190,5 +253,6 @@
             referrerpolicy="no-referrer"
         ></script>
         <script src="../js/api.js"></script>
+        <script src="../js/decor.js"></script>
     </body>
 </html>

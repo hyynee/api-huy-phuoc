@@ -3,7 +3,7 @@ function renderTable(arr) {
   for (var index = 0; index < arr.length; index++) {
     var dg = arr[index];
     htmlString += `
-      <div class="col  col-sm-6 col-lg-4 col-12" style="padding-bottom:60px">
+      <div class="col  col-sm-6 col-lg-4 col-12" style="padding-bottom:20px; padding-right:10px">
       <div class="card mx-auto">
       <div class="card__heart">
           <i class="fa fa-heart"></i>
@@ -31,8 +31,8 @@ function renderTable(arr) {
       <div class="card-bottom">
       <div class="rating-button">
       <div class="card_action">
-      <a class="btn-Buy" href="../views/detail.html?id=${dg.id}"> Buy Now </a>
-         <button class="price">$${dg.price}</button>
+      <a class="btn-Buy" style="text-decoration:none" href="../views/detail.html?id=${dg.id}"> Buy Now </a>
+        <button class="price" style="border: 2px solid black">$${dg.price}</button>
       </div>
       </div>
       </div>
