@@ -3,7 +3,7 @@ function renderTable(arr) {
   for (var index = 0; index < arr.length; index++) {
     var dg = arr[index];
     htmlString += `
-      <div class="col  col-sm-6 col-lg-4 col-12" style="padding-bottom:60px">
+      <div class="col  col-sm-6 col-lg-4 col-12" style="padding-bottom:100px">
       <div class="card mx-auto">
       <div class="card__heart">
           <i class="fa fa-heart"></i>
