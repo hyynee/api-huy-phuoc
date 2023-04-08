@@ -74,8 +74,10 @@ document.getElementById("control").onclick = function () {
   });
   promise.then(function (res) {
     console.log(res.data.content);
+    alert("Đăng nhập thành công <3");
   });
   promise.catch(function (err) {
     console.log(err.response.data);
+    alert("Đăng nhập thất  bại rồi :(((");
   });
 };
