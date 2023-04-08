@@ -22,10 +22,12 @@ document.getElementById("btn-submit").onclick = function () {
   });
   promise.then(function (res) {
     console.log(res.data.content);
+    alert("Đăng ký thành công!");
     resetForm(signup);
   });
   promise.catch(function (err) {
     console.log(err.response.data.content);
+    alert("Đăng ký thất bại!");
   });
 };
 function resetForm() {
