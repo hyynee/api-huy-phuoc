@@ -22,18 +22,18 @@ document.getElementById("btn-submit").onclick = function () {
   });
   promise.then(function (res) {
     console.log(res.data.content);
-    alert("Đăng ký thành công!");
+    console.log("Đăng ký thành công!");
     resetForm(signup);
   });
   promise.catch(function (err) {
     console.log(err.response.data.content);
-    alert("Đăng ký thất bại!");
+    console.log("Đăng ký thất bại!");
   });
 };
 function resetForm() {
-  document.getElementById("name").value ="";
-  document.getElementById("email").value ="";
-  document.getElementById("password").value ="";
-  document.getElementById("phone").value ="";
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
+  document.getElementById("phone").value = "";
   document.getElementById("confirm-pass").value = "";
 }
