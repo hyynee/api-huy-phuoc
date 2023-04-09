@@ -44,6 +44,9 @@
           }
         }
         .detail-content {
+          @media screen and (max-width: 768px) {
+            padding-left: 50px;
+          }
           .title {
           }
           .text {

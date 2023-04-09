@@ -43,7 +43,7 @@ function renderTable(arr) {
          <button class="btn text-white bg-dark">${gd.size[4]}</button>
          <button class="btn text-white bg-dark">${gd.size[5]}</button>
        </div>
-       <p class="display-6 text-danger">$${gd.price}</p>
+       <h6 class="display-6 text-danger">$${gd.price}</h6>
        <div class="buttons_added text-white" style="font-size:20px;"> Số Lượng:${gd.quantity} <br>
          <input
            class="minus is-form"

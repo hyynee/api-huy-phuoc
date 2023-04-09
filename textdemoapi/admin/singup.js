@@ -22,7 +22,7 @@ document.getElementById("btn-submit").onclick = function () {
   });
   promise.then(function (res) {
     console.log(res.data.content);
-    console.log("Đăng ký thành công!");
+   alert("Đăng ký thành công!");
     resetForm(signup);
   });
   promise.catch(function (err) {
