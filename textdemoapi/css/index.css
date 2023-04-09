@@ -390,7 +390,7 @@
 #detail .container .avable .card .img1 img {
   width: 80%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1260px) {
   #detail .container .avable .card .detail-content {
     padding-left: 50px;
   }
